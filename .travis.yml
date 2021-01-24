@@ -1,5 +1,5 @@
 language: swift
 osx_image: xcode11.3
-xcode_project: TriangleApp.xcodeproj 
-xcode_scheme: TriangleApp
+xcode_project: TouristApp.xcodeproj 
+xcode_scheme: TouristApp
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro
