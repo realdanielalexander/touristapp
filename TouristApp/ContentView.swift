@@ -7,10 +7,33 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var homePresenter: PlacePresenter
+    @EnvironmentObject var favoritePresenter: FavoritePresenter
+    
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            NavigationView {
+                HomeView(presenter: homePresenter)
+            }.tabItem {
+                Image(systemName: "list.dash")
+                Text("Home")
+            }
+            NavigationView {
+                FavoriteView(presenter: favoritePresenter)
+            }.tabItem {
+                Image(systemName: "heart.fill")
+                Text("Favorites")
+            }
+            NavigationView {
+                ProfileView()
+            }.tabItem {
+                Image(systemName: "person.fill")
+                Text("Profile")
+            }
+        }
     }
 }
 
