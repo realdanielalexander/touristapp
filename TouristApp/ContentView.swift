@@ -8,10 +8,12 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import Core
+import Place
 
 struct ContentView: View {
-    @EnvironmentObject var homePresenter: PlacePresenter
-    @EnvironmentObject var favoritePresenter: FavoritePresenter
+    @EnvironmentObject var homePresenter: GetListPresenter<Any, PlaceDomainModel, Interactor<Any, [PlaceDomainModel], GetPlacesRepository<GetPlacesLocaleDataSource, GetPlacesRemoteDataSource, PlacesTransformer>>>
+    @EnvironmentObject var favoritePresenter: GetListPresenter<Any, PlaceDomainModel, Interactor<Any, [PlaceDomainModel], GetFavoritePlacesRepository<GetPlacesLocaleDataSource, GetPlacesRemoteDataSource, PlacesTransformer>>>
     
     var body: some View {
         TabView {

@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Combine
+import Place
 
 class PlacePresenter: ObservableObject {
     
@@ -44,7 +45,7 @@ class PlacePresenter: ObservableObject {
     }
     
     func linkBuilder<Content: View>(
-        for place: PlaceModel,
+        for place: PlaceDomainModel,
         @ViewBuilder content: () -> Content
     ) -> some View {
         NavigationLink(

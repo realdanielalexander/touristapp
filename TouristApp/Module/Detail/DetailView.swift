@@ -8,9 +8,14 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import Place
+import Core
 
 struct DetailView: View {
-    @ObservedObject var presenter: DetailPresenter
+    @ObservedObject var presenter: DetailPresenter<
+        Interactor<String, PlaceDomainModel, GetPlaceRepository<GetPlacesLocaleDataSource, GetPlacesRemoteDataSource, PlaceTransformer>>,
+        Interactor<String, PlaceDomainModel, UpdatePlaceRepository<GetPlacesLocaleDataSource, GetPlacesRemoteDataSource, PlaceTransformer>>>
+    
     
     var body: some View {
         ZStack {
@@ -73,17 +78,17 @@ extension DetailView {
     }
     
     var likeButton: some View {
-        HStack(alignment: .center) {
+        HStack() {
             if presenter.place.favorite {
                 CustomIcon(
                     imageName: "heart.fill",
                     title: "Favorited"
-                ).onTapGesture { self.presenter.updateFavoritePlace() }
+                ).onTapGesture { self.presenter.updateFavoritePlace(request: self.presenter.place.id)}
             } else {
                 CustomIcon(
                     imageName: "heart",
                     title: "Favorite"
-                ).onTapGesture { self.presenter.updateFavoritePlace() }
+                ).onTapGesture { self.presenter.updateFavoritePlace(request: self.presenter.place.id) }
             }
         }
     }

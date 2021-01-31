@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftUI
+import Core
+import Place
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -15,10 +17,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let homeUseCase = Injection.init().provideHome()
-        let favoriteUseCase = Injection.init().provideFavorite()
-        let homePresenter = PlacePresenter(useCase: homeUseCase)
-        let favoritePresenter = FavoritePresenter(useCase: favoriteUseCase)
+        let homeUseCase: Interactor<
+            Any, [PlaceDomainModel], GetPlacesRepository<
+                GetPlacesLocaleDataSource,
+                GetPlacesRemoteDataSource,
+                PlacesTransformer
+            >
+            > = Injection.init().providePlace()
+        
+        let homePresenter = GetListPresenter(useCase: homeUseCase)
+        
+        let favoriteUseCase: Interactor<
+            Any, [PlaceDomainModel], GetFavoritePlacesRepository<
+            GetPlacesLocaleDataSource,
+            GetPlacesRemoteDataSource,
+            PlacesTransformer
+            >
+            > = Injection.init().provideFavoriteMenu()
+        let favoritePresenter = GetListPresenter(useCase: favoriteUseCase)
+        
         let contentView = ContentView()
             .environmentObject(homePresenter)
             .environmentObject(favoritePresenter)

@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct PlacesResponse: Decodable {
+public struct PlacesResponse: Decodable {
     let places: [PlaceResponse]
     
 }
 
-struct PlaceResponse: Decodable {
+public struct PlaceResponse: Decodable {
     
     private enum CodingKeys: String, CodingKey {
         case id = "id"

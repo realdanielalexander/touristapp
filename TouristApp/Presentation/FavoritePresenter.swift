@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Combine
+import Place
 
 class FavoritePresenter: ObservableObject {
     
@@ -44,10 +45,10 @@ class FavoritePresenter: ObservableObject {
     }
     
     func linkBuilder<Content: View>(
-        for place: PlaceModel,
+        for place: PlaceDomainModel,
         @ViewBuilder content: () -> Content
     ) -> some View {
         NavigationLink(
-        destination: router.makeDetailView(for: place)) { content() }
+        destination: HomeRouter().makeDetailView(for: place)) { content() }
     }
 }
