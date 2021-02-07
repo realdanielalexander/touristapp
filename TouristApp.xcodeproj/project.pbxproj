@@ -616,6 +616,7 @@
 /* Begin XCBuildConfiguration section */
 		6520423425BD65A400A98391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QXNHSBY6S;
@@ -636,6 +637,7 @@
 		};
 		6520423525BD65A400A98391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QXNHSBY6S;
@@ -656,6 +658,7 @@
 		};
 		6520424225BD65AF00A98391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -677,6 +680,7 @@
 		};
 		6520424325BD65AF00A98391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -698,6 +702,7 @@
 		};
 		659637F8256FEBF6005F6465 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -758,6 +763,7 @@
 		};
 		659637F9256FEBF6005F6465 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
