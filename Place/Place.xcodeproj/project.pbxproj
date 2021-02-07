@@ -24,6 +24,8 @@
 		6588596F25CFDA37007CF715 /* Pods_Place.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8B3810315064F0156CBBC /* Pods_Place.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65A6243A25CFE8CC002F8137 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243925CFE8CC002F8137 /* RealmSwift */; };
 		65A6243C25CFE92A002F8137 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243B25CFE92A002F8137 /* Realm */; };
+		65DACA7225D0500300DE5FB5 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DACA7125D0500300DE5FB5 /* Core.framework */; };
+		65DACA7325D0500300DE5FB5 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DACA7125D0500300DE5FB5 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6588596F25CFDA37007CF715 /* Pods_Place.framework in Embed Frameworks */,
+				65DACA7325D0500300DE5FB5 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		6576411E25C5441E00A29C6C /* PlaceDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDomainModel.swift; sourceTree = "<group>"; };
 		6576412025C5455000A29C6C /* PlaceTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTransformer.swift; sourceTree = "<group>"; };
 		6588596A25CFDA22007CF715 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DACA7125D0500300DE5FB5 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC8B3810315064F0156CBBC /* Pods_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2A98FC9A6B8300F4405C6E /* Pods-Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Place.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Place/Pods-Place.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,7 @@
 				65A6243A25CFE8CC002F8137 /* RealmSwift in Frameworks */,
 				6576412425C54E7400A29C6C /* Alamofire in Frameworks */,
 				65A6243C25CFE92A002F8137 /* Realm in Frameworks */,
+				65DACA7225D0500300DE5FB5 /* Core.framework in Frameworks */,
 				6588596E25CFDA37007CF715 /* Pods_Place.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +189,7 @@
 		ACB3B0493A233522F7A53646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65DACA7125D0500300DE5FB5 /* Core.framework */,
 				6588596A25CFDA22007CF715 /* Core.framework */,
 				7FC8B3810315064F0156CBBC /* Pods_Place.framework */,
 				6532AD5925CFD6640080D7A9 /* Core.framework */,
