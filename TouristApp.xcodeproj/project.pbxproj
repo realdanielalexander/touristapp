@@ -81,7 +81,6 @@
 		6520423A25BD65AF00A98391 /* TouristAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouristAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6520423C25BD65AF00A98391 /* TouristAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristAppTests.swift; sourceTree = "<group>"; };
 		6520423E25BD65AF00A98391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6520424625BD663A00A98391 /* TouristApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TouristApp.xctestplan; sourceTree = "<group>"; };
 		65214E8A25725FFE008F33D9 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		652E5DD725710077007B72E6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		652E5DD925710083007B72E6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		6540721F25D02E9B00828F34 /* Place.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Place.xcodeproj; path = ../Place/Place.xcodeproj; sourceTree = "<group>"; };
 		65490B882570A63100000A49 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		65490B8D2570B07600000A49 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		6555D93625D034930010BDAF /* TouristApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TouristApp.xctestplan; sourceTree = "<group>"; };
 		657640FA25C5366500A29C6C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657640FE25C5368B00A29C6C /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576410225C5368E00A29C6C /* Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +258,7 @@
 		659637DA256FEBF3005F6465 = {
 			isa = PBXGroup;
 			children = (
+				6555D93625D034930010BDAF /* TouristApp.xctestplan */,
 				6540721925D02E9B00828F34 /* Core.xcodeproj */,
 				6540721F25D02E9B00828F34 /* Place.xcodeproj */,
 				3C54C460C903A9AA0A409172 /* Frameworks */,
@@ -266,7 +267,6 @@
 				659637E5256FEBF3005F6465 /* TouristApp */,
 				6520423B25BD65AF00A98391 /* TouristAppTests */,
 				6520422D25BD65A400A98391 /* TouristAppUITests */,
-				6520424625BD663A00A98391 /* TouristApp.xctestplan */,
 			);
 			sourceTree = "<group>";
 		};
