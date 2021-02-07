@@ -17,7 +17,7 @@
 		654071EC25CFF0D600828F34 /* Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654071EB25CFF0D600828F34 /* Place.framework */; };
 		654071F025CFF0DC00828F34 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654071EF25CFF0DC00828F34 /* Core.framework */; };
 		65490B892570A63100000A49 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65490B882570A63100000A49 /* ActivityIndicator.swift */; };
-		65490B8C2570A9B600000A49 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */; };
+		65490B8C2570A9B600000A49 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */; };
 		65490B8E2570B07600000A49 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65490B8D2570B07600000A49 /* HomeRouter.swift */; };
 		6576412625C579A600A29C6C /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576412525C579A600A29C6C /* CustomEmptyView.swift */; };
 		6576412825C57A0D00A29C6C /* PlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576412725C57A0D00A29C6C /* PlaceRow.swift */; };
@@ -31,8 +31,10 @@
 		6596382425701DC2005F6465 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6596382325701DC2005F6465 /* API.swift */; };
 		6596382A257023BF005F6465 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65963829257023BF005F6465 /* HomeView.swift */; };
 		6596382D2570286B005F6465 /* TouristApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6596382B2570286B005F6465 /* TouristApp.xcdatamodeld */; };
-		65B5CB4825711E5C00E24E83 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */; };
-		65B5CB4A25711E5C00E24E83 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */; };
+		65B5CB4825711E5C00E24E83 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4725711E5C00E24E83 /* RxSwift */; };
+		65B5CB4A25711E5C00E24E83 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4925711E5C00E24E83 /* RxCocoa */; };
+		65DACA3025D0442500DE5FB5 /* Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540722425D02E9B00828F34 /* Place.framework */; };
+		65DACA3525D0442B00DE5FB5 /* Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6540722425D02E9B00828F34 /* Place.framework */; };
 		9B507EDA13A66A37512EE014 /* Pods_TouristApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430F4E001EFCC980FAEA403F /* Pods_TouristApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DACA3025D0442500DE5FB5 /* Place.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DACA3525D0442B00DE5FB5 /* Place.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,11 +160,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B5CB4825711E5C00E24E83 /* BuildFile in Frameworks */,
-				65490B8C2570A9B600000A49 /* BuildFile in Frameworks */,
+				65B5CB4825711E5C00E24E83 /* RxSwift in Frameworks */,
+				65490B8C2570A9B600000A49 /* SDWebImageSwiftUI in Frameworks */,
 				654071F025CFF0DC00828F34 /* Core.framework in Frameworks */,
 				654071EC25CFF0D600828F34 /* Place.framework in Frameworks */,
-				65B5CB4A25711E5C00E24E83 /* BuildFile in Frameworks */,
+				65B5CB4A25711E5C00E24E83 /* RxCocoa in Frameworks */,
 				9B507EDA13A66A37512EE014 /* Pods_TouristApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,9 +425,9 @@
 			);
 			name = TouristApp;
 			packageProductDependencies = (
-				65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */,
-				65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */,
-				65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */,
+				65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */,
+				65B5CB4725711E5C00E24E83 /* RxSwift */,
+				65B5CB4925711E5C00E24E83 /* RxCocoa */,
 			);
 			productName = TouristApp;
 			productReference = 659637E3256FEBF3005F6465 /* TouristApp.app */;
@@ -462,10 +466,10 @@
 			);
 			mainGroup = 659637DA256FEBF3005F6465;
 			packageReferences = (
-				65963800256FF969005F6465 /* RemoteSwiftPackageReference */,
-				65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */,
-				65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */,
-				654E7C8A2571817C002431AB /* RemoteSwiftPackageReference */,
+				65963800256FF969005F6465 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				654E7C8A2571817C002431AB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 659637E4256FEBF3005F6465 /* Products */;
 			projectDirPath = "";
@@ -573,7 +577,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n";
+			shellScript = "
+";
 		};
 		E66C7A7B2FA817C68D807226 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -949,7 +954,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */ = {
+		65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
@@ -957,7 +962,7 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		654E7C8A2571817C002431AB /* RemoteSwiftPackageReference */ = {
+		654E7C8A2571817C002431AB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
 			requirement = {
@@ -965,7 +970,7 @@
 				minimumVersion = 10.1.4;
 			};
 		};
-		65963800256FF969005F6465 /* RemoteSwiftPackageReference */ = {
+		65963800256FF969005F6465 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -973,7 +978,7 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */ = {
+		65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -984,19 +989,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */ = {
+		65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */;
+			package = 65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
-		65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */ = {
+		65B5CB4725711E5C00E24E83 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */;
+			package = 65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */ = {
+		65B5CB4925711E5C00E24E83 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */;
+			package = 65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
