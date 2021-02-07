@@ -22,7 +22,7 @@ struct FavoriteView: View {
             } else if self.presenter.isError {
                 errorIndicator
             } else if self.presenter.list.isEmpty {
-                emptyCategories
+                emptyView
             } else {
                 content
             }
@@ -45,12 +45,12 @@ extension FavoriteView {
     
     var errorIndicator: some View {
         CustomEmptyView(
-            image: "assetSearchNotFound",
+            image: "exclamationmark.circle",
             title: presenter.errorMessage
         )
     }
     
-    var emptyCategories: some View {
+    var emptyView: some View {
         CustomEmptyView(
             image: "airplane",
             title: "Start adding your favorite places!"

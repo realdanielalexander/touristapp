@@ -17,12 +17,14 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            List() {
-                ForEach(self.presenter.list) { place in
-                    self.linkBuilder(for: place) {
-                        PlaceRow(place: place)
-                    }
-                }
+            if self.presenter.isLoading {
+                loadingIndicator
+            } else if self.presenter.isError {
+                errorIndicator
+            } else if self.presenter.list.isEmpty {
+                emptyView
+            } else {
+                content
             }
         }.onAppear {
             self.presenter.getList(request: nil)
@@ -31,6 +33,38 @@ struct HomeView: View {
 }
 
 extension HomeView {
+    
+    var loadingIndicator: some View {
+        VStack {
+            Text("Loading...")
+            ActivityIndicator()
+        }
+    }
+    
+    var errorIndicator: some View {
+        CustomEmptyView(
+            image: "exclamationmark.circle",
+            title: presenter.errorMessage
+        )
+    }
+    
+    var emptyView: some View {
+        CustomEmptyView(
+            image: "airplane",
+            title: "Start adding your favorite places!"
+        )
+    }
+    
+    var content: some View {
+        List() {
+            ForEach(self.presenter.list) { place in
+                self.linkBuilder(for: place) {
+                    PlaceRow(place: place)
+                }
+            }
+        }
+    }
+    
     func linkBuilder<Content: View>(
         for place: PlaceDomainModel,
         @ViewBuilder content: () -> Content
