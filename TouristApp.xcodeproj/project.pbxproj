@@ -17,7 +17,7 @@
 		654071EC25CFF0D600828F34 /* Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654071EB25CFF0D600828F34 /* Place.framework */; };
 		654071F025CFF0DC00828F34 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654071EF25CFF0DC00828F34 /* Core.framework */; };
 		65490B892570A63100000A49 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65490B882570A63100000A49 /* ActivityIndicator.swift */; };
-		65490B8C2570A9B600000A49 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */; };
+		65490B8C2570A9B600000A49 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */; };
 		65490B8E2570B07600000A49 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65490B8D2570B07600000A49 /* HomeRouter.swift */; };
 		6576412625C579A600A29C6C /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576412525C579A600A29C6C /* CustomEmptyView.swift */; };
 		6576412825C57A0D00A29C6C /* PlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576412725C57A0D00A29C6C /* PlaceRow.swift */; };
@@ -31,8 +31,8 @@
 		6596382425701DC2005F6465 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6596382325701DC2005F6465 /* API.swift */; };
 		6596382A257023BF005F6465 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65963829257023BF005F6465 /* HomeView.swift */; };
 		6596382D2570286B005F6465 /* TouristApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6596382B2570286B005F6465 /* TouristApp.xcdatamodeld */; };
-		65B5CB4825711E5C00E24E83 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4725711E5C00E24E83 /* RxSwift */; };
-		65B5CB4A25711E5C00E24E83 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4925711E5C00E24E83 /* RxCocoa */; };
+		65B5CB4825711E5C00E24E83 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */; };
+		65B5CB4A25711E5C00E24E83 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */; };
 		9B507EDA13A66A37512EE014 /* Pods_TouristApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430F4E001EFCC980FAEA403F /* Pods_TouristApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +64,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 657640C525C533E100A29C6C;
 			remoteInfo = Place;
+		};
+		65DACA2325D03F0C00DE5FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5296A899114AD35114F1DF5C3460F83A;
+			remoteInfo = "Pods-Core";
+		};
+		65DACA2525D03F0C00DE5FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9132FA2CC96CA3BA90292F97BEAA4854;
+			remoteInfo = "Pods-Place";
+		};
+		65DACA2725D03F0C00DE5FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3962B7CDEC72028311FB56A9E27D070F;
+			remoteInfo = "Pods-TouristApp";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -111,8 +132,9 @@
 		6596382325701DC2005F6465 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		65963829257023BF005F6465 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6596382C2570286B005F6465 /* TouristApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TouristApp.xcdatamodel; sourceTree = "<group>"; };
-		9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouristApp.debug.xcconfig"; path = "Target Support Files/Pods-TouristApp/Pods-TouristApp.debug.xcconfig"; sourceTree = "<group>"; };
-		C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouristApp.release.xcconfig"; path = "Target Support Files/Pods-TouristApp/Pods-TouristApp.release.xcconfig"; sourceTree = "<group>"; };
+		65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		9442CB15D65395E4AF31AEE2 /* Pods-TouristApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouristApp.release.xcconfig"; path = "Target Support Files/Pods-TouristApp/Pods-TouristApp.release.xcconfig"; sourceTree = "<group>"; };
+		9B604046CFB6385F2E07709C /* Pods-TouristApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouristApp.debug.xcconfig"; path = "Target Support Files/Pods-TouristApp/Pods-TouristApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,11 +156,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B5CB4825711E5C00E24E83 /* RxSwift in Frameworks */,
-				65490B8C2570A9B600000A49 /* SDWebImageSwiftUI in Frameworks */,
+				65B5CB4825711E5C00E24E83 /* BuildFile in Frameworks */,
+				65490B8C2570A9B600000A49 /* BuildFile in Frameworks */,
 				654071F025CFF0DC00828F34 /* Core.framework in Frameworks */,
 				654071EC25CFF0D600828F34 /* Place.framework in Frameworks */,
-				65B5CB4A25711E5C00E24E83 /* RxCocoa in Frameworks */,
+				65B5CB4A25711E5C00E24E83 /* BuildFile in Frameworks */,
 				9B507EDA13A66A37512EE014 /* Pods_TouristApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +171,8 @@
 		1B5379FD8C65B8ED57FAE85D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */,
-				C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */,
+				9B604046CFB6385F2E07709C /* Pods-TouristApp.debug.xcconfig */,
+				9442CB15D65395E4AF31AEE2 /* Pods-TouristApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -258,6 +280,7 @@
 		659637DA256FEBF3005F6465 = {
 			isa = PBXGroup;
 			children = (
+				65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */,
 				6555D93625D034930010BDAF /* TouristApp.xctestplan */,
 				6540721925D02E9B00828F34 /* Core.xcodeproj */,
 				6540721F25D02E9B00828F34 /* Place.xcodeproj */,
@@ -333,6 +356,16 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		65DACA1C25D03F0C00DE5FB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DACA2425D03F0C00DE5FB5 /* Pods_Core.framework */,
+				65DACA2625D03F0C00DE5FB5 /* Pods_Place.framework */,
+				65DACA2825D03F0C00DE5FB5 /* Pods_TouristApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,8 +383,6 @@
 				6520423225BD65A400A98391 /* PBXTargetDependency */,
 			);
 			name = TouristAppUITests;
-			packageProductDependencies = (
-			);
 			productName = TouristAppUITests;
 			productReference = 6520422C25BD65A400A98391 /* TouristAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -370,8 +401,6 @@
 				6520424025BD65AF00A98391 /* PBXTargetDependency */,
 			);
 			name = TouristAppTests;
-			packageProductDependencies = (
-			);
 			productName = TouristAppTests;
 			productReference = 6520423A25BD65AF00A98391 /* TouristAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -392,9 +421,9 @@
 			);
 			name = TouristApp;
 			packageProductDependencies = (
-				65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */,
-				65B5CB4725711E5C00E24E83 /* RxSwift */,
-				65B5CB4925711E5C00E24E83 /* RxCocoa */,
+				65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */,
+				65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */,
+				65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */,
 			);
 			productName = TouristApp;
 			productReference = 659637E3256FEBF3005F6465 /* TouristApp.app */;
@@ -433,10 +462,10 @@
 			);
 			mainGroup = 659637DA256FEBF3005F6465;
 			packageReferences = (
-				65963800256FF969005F6465 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				654E7C8A2571817C002431AB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				65963800256FF969005F6465 /* RemoteSwiftPackageReference */,
+				65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */,
+				65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */,
+				654E7C8A2571817C002431AB /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 659637E4256FEBF3005F6465 /* Products */;
 			projectDirPath = "";
@@ -448,6 +477,10 @@
 				{
 					ProductGroup = 6540722025D02E9B00828F34 /* Products */;
 					ProjectRef = 6540721F25D02E9B00828F34 /* Place.xcodeproj */;
+				},
+				{
+					ProductGroup = 65DACA1C25D03F0C00DE5FB5 /* Products */;
+					ProjectRef = 65DACA1B25D03F0C00DE5FB5 /* Pods.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -472,6 +505,27 @@
 			fileType = wrapper.framework;
 			path = Place.framework;
 			remoteRef = 6540722325D02E9B00828F34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65DACA2425D03F0C00DE5FB5 /* Pods_Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Core.framework;
+			remoteRef = 65DACA2325D03F0C00DE5FB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65DACA2625D03F0C00DE5FB5 /* Pods_Place.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Place.framework;
+			remoteRef = 65DACA2525D03F0C00DE5FB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65DACA2825D03F0C00DE5FB5 /* Pods_TouristApp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_TouristApp.framework;
+			remoteRef = 65DACA2725D03F0C00DE5FB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -519,8 +573,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\n";
 		};
 		E66C7A7B2FA817C68D807226 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -616,7 +669,6 @@
 /* Begin XCBuildConfiguration section */
 		6520423425BD65A400A98391 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QXNHSBY6S;
@@ -637,7 +689,6 @@
 		};
 		6520423525BD65A400A98391 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QXNHSBY6S;
@@ -658,7 +709,6 @@
 		};
 		6520424225BD65AF00A98391 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -680,7 +730,6 @@
 		};
 		6520424325BD65AF00A98391 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -702,7 +751,6 @@
 		};
 		659637F8256FEBF6005F6465 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -763,7 +811,6 @@
 		};
 		659637F9256FEBF6005F6465 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -818,7 +865,7 @@
 		};
 		659637FB256FEBF6005F6465 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FE3794944672471EB3BC0DA /* Pods-TouristApp.debug.xcconfig */;
+			baseConfigurationReference = 9B604046CFB6385F2E07709C /* Pods-TouristApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -840,7 +887,7 @@
 		};
 		659637FC256FEBF6005F6465 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C313ECEB6AF0F4180FB4A66A /* Pods-TouristApp.release.xcconfig */;
+			baseConfigurationReference = 9442CB15D65395E4AF31AEE2 /* Pods-TouristApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -902,7 +949,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
@@ -910,7 +957,7 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		654E7C8A2571817C002431AB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		654E7C8A2571817C002431AB /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
 			requirement = {
@@ -918,7 +965,7 @@
 				minimumVersion = 10.1.4;
 			};
 		};
-		65963800256FF969005F6465 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		65963800256FF969005F6465 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -926,7 +973,7 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -937,19 +984,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		65490B8B2570A9B600000A49 /* SDWebImageSwiftUI */ = {
+		65490B8B2570A9B600000A49 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65490B8A2570A9B600000A49 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = 65490B8A2570A9B600000A49 /* RemoteSwiftPackageReference */;
 			productName = SDWebImageSwiftUI;
 		};
-		65B5CB4725711E5C00E24E83 /* RxSwift */ = {
+		65B5CB4725711E5C00E24E83 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */;
 			productName = RxSwift;
 		};
-		65B5CB4925711E5C00E24E83 /* RxCocoa */ = {
+		65B5CB4925711E5C00E24E83 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 65B5CB4625711E5C00E24E83 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 65B5CB4625711E5C00E24E83 /* RemoteSwiftPackageReference */;
 			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */

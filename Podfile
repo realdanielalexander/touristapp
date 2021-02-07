@@ -9,9 +9,9 @@ target 'TouristApp' do
 end
  
 target 'Core' do
-    project '../Core/Core'
+    project 'Core/Core'
 end
 
 target 'Place' do
-    project '../Place/Place'
+    project 'Place/Place'
 end
