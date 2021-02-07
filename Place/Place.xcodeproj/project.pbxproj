@@ -25,7 +25,6 @@
 		65A6243A25CFE8CC002F8137 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243925CFE8CC002F8137 /* RealmSwift */; };
 		65A6243C25CFE92A002F8137 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243B25CFE92A002F8137 /* Realm */; };
 		65DACA7225D0500300DE5FB5 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DACA7125D0500300DE5FB5 /* Core.framework */; };
-		65DACA7325D0500300DE5FB5 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DACA7125D0500300DE5FB5 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +35,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6588596F25CFDA37007CF715 /* Pods_Place.framework in Embed Frameworks */,
-				65DACA7325D0500300DE5FB5 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
