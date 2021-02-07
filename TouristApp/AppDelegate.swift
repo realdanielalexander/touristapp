@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Realm
 import RealmSwift
+import Place
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     
-    realm = try? Realm()
+    var configuration = Realm.Configuration()
+    configuration.deleteRealmIfMigrationNeeded = true
+    Realm.Configuration.defaultConfiguration = configuration
+    realm = try! Realm(configuration: configuration)
     
     return true
   }

@@ -13,8 +13,6 @@
 		651C88D025C5D9BC00B59E3D /* PlacesTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C88CF25C5D9BC00B59E3D /* PlacesTransformer.swift */; };
 		657640CA25C533E100A29C6C /* Place.h in Headers */ = {isa = PBXBuildFile; fileRef = 657640C825C533E100A29C6C /* Place.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6576410C25C5373300A29C6C /* PlaceModuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576410B25C5373300A29C6C /* PlaceModuleEntity.swift */; };
-		6576410F25C537B000A29C6C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6576410E25C537B000A29C6C /* Realm */; };
-		6576411125C537B000A29C6C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6576411025C537B000A29C6C /* RealmSwift */; };
 		6576411325C537EF00A29C6C /* GetPlacesLocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576411225C537EF00A29C6C /* GetPlacesLocaleDataSource.swift */; };
 		6576411725C53C0F00A29C6C /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576411625C53C0F00A29C6C /* PlacesResponse.swift */; };
 		6576411925C53C9500A29C6C /* GetPlacesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576411825C53C9500A29C6C /* GetPlacesRemoteDataSource.swift */; };
@@ -22,15 +20,33 @@
 		6576411F25C5441E00A29C6C /* PlaceDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576411E25C5441E00A29C6C /* PlaceDomainModel.swift */; };
 		6576412125C5455000A29C6C /* PlaceTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576412025C5455000A29C6C /* PlaceTransformer.swift */; };
 		6576412425C54E7400A29C6C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6576412325C54E7400A29C6C /* Alamofire */; };
-		BB9F2D47DC90DEF32B06BD38 /* Pods_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8B3810315064F0156CBBC /* Pods_Place.framework */; };
+		6588596E25CFDA37007CF715 /* Pods_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8B3810315064F0156CBBC /* Pods_Place.framework */; };
+		6588596F25CFDA37007CF715 /* Pods_Place.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC8B3810315064F0156CBBC /* Pods_Place.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65A6243A25CFE8CC002F8137 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243925CFE8CC002F8137 /* RealmSwift */; };
+		65A6243C25CFE92A002F8137 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 65A6243B25CFE92A002F8137 /* Realm */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6588597025CFDA37007CF715 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6588596F25CFDA37007CF715 /* Pods_Place.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		00A26B211697BCCE38A01BFA /* Pods-Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Place.release.xcconfig"; path = "Target Support Files/Pods-Place/Pods-Place.release.xcconfig"; sourceTree = "<group>"; };
+		00A26B211697BCCE38A01BFA /* Pods-Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Place.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Place/Pods-Place.release.xcconfig"; sourceTree = "<group>"; };
 		651C88C325C59BCC00B59E3D /* GetFavoritePlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoritePlacesRepository.swift; sourceTree = "<group>"; };
 		651C88C525C59C1F00B59E3D /* UpdatePlaceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePlaceRepository.swift; sourceTree = "<group>"; };
 		651C88CB25C5D31B00B59E3D /* GetPlaceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetPlaceRepository.swift; path = Place/Data/GetPlaceRepository.swift; sourceTree = SOURCE_ROOT; };
 		651C88CF25C5D9BC00B59E3D /* PlacesTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTransformer.swift; sourceTree = "<group>"; };
+		6532AD5925CFD6640080D7A9 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657640C525C533E100A29C6C /* Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		657640C825C533E100A29C6C /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		657640C925C533E100A29C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,8 +57,9 @@
 		6576411A25C53EEE00A29C6C /* GetPlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesRepository.swift; sourceTree = "<group>"; };
 		6576411E25C5441E00A29C6C /* PlaceDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDomainModel.swift; sourceTree = "<group>"; };
 		6576412025C5455000A29C6C /* PlaceTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTransformer.swift; sourceTree = "<group>"; };
+		6588596A25CFDA22007CF715 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC8B3810315064F0156CBBC /* Pods_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD2A98FC9A6B8300F4405C6E /* Pods-Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Place.debug.xcconfig"; path = "Target Support Files/Pods-Place/Pods-Place.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2A98FC9A6B8300F4405C6E /* Pods-Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Place.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Place/Pods-Place.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6576411125C537B000A29C6C /* RealmSwift in Frameworks */,
+				65A6243A25CFE8CC002F8137 /* RealmSwift in Frameworks */,
 				6576412425C54E7400A29C6C /* Alamofire in Frameworks */,
-				6576410F25C537B000A29C6C /* Realm in Frameworks */,
-				BB9F2D47DC90DEF32B06BD38 /* Pods_Place.framework in Frameworks */,
+				65A6243C25CFE92A002F8137 /* Realm in Frameworks */,
+				6588596E25CFDA37007CF715 /* Pods_Place.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +184,9 @@
 		ACB3B0493A233522F7A53646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6588596A25CFDA22007CF715 /* Core.framework */,
 				7FC8B3810315064F0156CBBC /* Pods_Place.framework */,
+				6532AD5925CFD6640080D7A9 /* Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +214,7 @@
 				657640C125C533E100A29C6C /* Sources */,
 				657640C225C533E100A29C6C /* Frameworks */,
 				657640C325C533E100A29C6C /* Resources */,
+				6588597025CFDA37007CF715 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,9 +222,9 @@
 			);
 			name = Place;
 			packageProductDependencies = (
-				6576410E25C537B000A29C6C /* Realm */,
-				6576411025C537B000A29C6C /* RealmSwift */,
 				6576412325C54E7400A29C6C /* Alamofire */,
+				65A6243925CFE8CC002F8137 /* RealmSwift */,
+				65A6243B25CFE92A002F8137 /* Realm */,
 			);
 			productName = Place;
 			productReference = 657640C525C533E100A29C6C /* Place.framework */;
@@ -442,6 +462,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LD_VERIFY_BITCODE = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.Place;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -469,6 +490,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LD_VERIFY_BITCODE = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.Place;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -520,20 +542,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6576410E25C537B000A29C6C /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6576410D25C537B000A29C6C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = Realm;
-		};
-		6576411025C537B000A29C6C /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6576410D25C537B000A29C6C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
 		6576412325C54E7400A29C6C /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6576412225C54E7400A29C6C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		65A6243925CFE8CC002F8137 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6576410D25C537B000A29C6C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		65A6243B25CFE92A002F8137 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6576410D25C537B000A29C6C /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

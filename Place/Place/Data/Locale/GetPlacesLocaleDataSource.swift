@@ -24,14 +24,10 @@ public struct GetPlacesLocaleDataSource: LocaleDataSource {
     
     public func list(request: Any?) -> AnyPublisher<[PlaceModuleEntity], Error> {
             return Future<[PlaceModuleEntity], Error> { completion in
-                if self._realm != nil {
-                    let places: Results<PlaceModuleEntity> = {
-                        self._realm.objects(PlaceModuleEntity.self)
-                    }()
-                    completion(.success(places.toArray(ofType: PlaceModuleEntity.self)))
-              } else {
-                completion(.failure(DatabaseError.invalidInstance))
-              }
+                let places: Results<PlaceModuleEntity> = {
+                    self._realm.objects(PlaceModuleEntity.self)
+                }()
+                completion(.success(places.toArray(ofType: PlaceModuleEntity.self)))
             }.eraseToAnyPublisher()
     }
     
@@ -54,6 +50,7 @@ public struct GetPlacesLocaleDataSource: LocaleDataSource {
       return Future<Bool, Error> { completion in
         if let realm = self._realm {
           do {
+            print("write")
             try realm.write {
               for place in entities {
                 realm.add(place, update: .all)
