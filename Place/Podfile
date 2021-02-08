@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.2'
+use_frameworks!
+ 
+workspace 'PlaceModularization'
+ 
+target 'Place' do
+end
+ 
+target 'Core' do
+    project '../Core/Core'
+end
