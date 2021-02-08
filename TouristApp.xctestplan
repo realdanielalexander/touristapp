@@ -18,13 +18,6 @@
         "identifier" : "6520423925BD65AF00A98391",
         "name" : "TouristAppTests"
       }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:TouristApp.xcodeproj",
-        "identifier" : "6520422B25BD65A400A98391",
-        "name" : "TouristAppUITests"
-      }
     }
   ],
   "version" : 1
